@@ -1,10 +1,81 @@
+<!--HTML5 - Single Step Games, LLC (c)2016-->
+
 <!DOCTYPE html>
 <html>
-<!--<header>
-	<meta http-equiv="refresh" content="0; url=http://repo.github.io/folder/index.html" />
-</header>-->
-<body>
-	<h1>Hello World SSG Site</h1>
-	<p>I'm hosted with GitHub Pages.</p>
+<head>
+	<!--[if lt IE 9]>
+		<script>
+			document.createElement('header');
+			document.createElement('nav');
+			document.createElement('section');
+			document.createElement('article');
+			document.createElement('aside');
+			document.createElement('footer');
+		</script>
+	<![endif]-->
+	<title>Single Step Games</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link href="ssg_shared.css" rel="stylesheet" type="text/css">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<script src="ssg_scripts_shared.js"></script>
+	<script src="ssg_scripts_a.js"></script>
+</head>
+<body onload="getFooterDate('footerText',2016); updateAboutImg();" itemscope itemtype="http://schema.org/Corporation">
+	<!--<header>
+		<a href="index.html"><h1 itemprop="name">Single Step Games</h1></a>
+	</header>
+	<nav>
+		<ul>
+			<li>
+				<a id="menu_left" onmouseover="hideMenuDropDown()" href="sw_About.html">About</a>
+			</li>
+			<li>
+				<a id="menu_mid_left" onmouseover="showMenuDropDown('m_gd')" onmouseout="startMenuHideDelayTimer()" href="sw_GameDesigner.html">Game Design</a>
+				<div id="m_gd" onmouseover="cancelMenuHideDelayTimer()" onmouseout="startMenuHideDelayTimer()">
+					<a href="sw_GameDesigner.html#pro">Professional Experience</a>
+					<a href="sw_GameDesigner.html#hobby">Hobbyist Development</a>
+					<a href="sw_GameDesigner.html#early">Early Years Development</a>
+				</div>
+			</li>
+			<li>
+				<a id="menu_mid_right" onmouseover="hideMenuDropDown()" href="sw_Certifications.html">Certifications</a>
+			</li>
+			<li>
+				<a id="menu_right" onmouseover="showMenuDropDown('m_r')" onmouseout="startMenuHideDelayTimer()" href="sw_Resume.html">Resume</a>
+				<div id="m_r" onmouseover="cancelMenuHideDelayTimer()" onmouseout="startMenuHideDelayTimer()">
+					<a href="sw_Resume.html#summary">Professional Summary</a>
+					<a href="sw_Resume.html#career">Career Competency Highlights</a>
+					<a href="sw_Resume.html#work">Work Experience</a>
+					<a href="sw_Resume.html#education">Education</a>
+					<a href="sw_Resume.html#languages">Programming Languages</a>
+					<a href="sw_Resume.html#skills">Computer Skills</a>
+					<a href="sw_Resume.html#credits">Credits and Awards</a>
+				</div>
+			</li>
+		</ul>
+	</nav>-->
+	<section itemscope itemtype="http://schema.org/WebPage">
+		<div id="aboutImgDiv">
+			<img id="aboutImg0" class="fullOpac" src="Images/SSGLogoSequence0.png" alt="Web Developer and Game Designer" itemprop="image">
+			<img id="aboutImg1" src="Images/SSGLogoSequence1.png" alt="Web Developer and Game Designer" itemprop="image">
+			<img id="aboutImg2" src="Images/SSGLogoSequence2.png" alt="Bachelor of Science and Technical Certifications">
+			<img id="aboutImg3" src="Images/SSGLogoSequence3.png" alt="Enjoys disc golf, skateboarding, and video games" itemprop="image">
+			<img id="aboutImg4" src="Images/SSGLogoSequence4.png" alt="HTML5, CSS3, JavaScript, Lua, and Kismet" itemprop="image">
+			<div id="aboutImgTextDiv"></div>
+			<div id="aboutImgText1" class="fullOpac">Creating exciting player experiences,<br>one game at a time.</div>
+		</div>
+		<br>
+		<article>
+			<p class="desc about">
+				"A journey of a thousand miles begins with a single step." ~ Laozi<br><br>
+				Let's go on a <span style="text-decoration: line-through">journey</span> <span style="font-style: italic">quest</span> together!
+			</p>
+
+		</article>
+	</section>
+	<footer>
+		<p>E-mail: <a href="mailto:Steve@SingleStepGames.com" target="_blank" itemprop="email">Steve@SingleStepGames.com</a></p>
+		<p id="footerText">Copyright © 2016 Single Step Games, LLC. All rights reserved.</p>
+	</footer>
 </body>
 </html>
