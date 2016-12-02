@@ -411,9 +411,10 @@ footer p a:link,footer p a:visited
 		height:80px;
 	}
 	
-	.spacer
+	footer .spacer
 	{
 		margin:0 0 0 0;
+		height:0px;
 	}
 	
 	/*font 50% less*/
