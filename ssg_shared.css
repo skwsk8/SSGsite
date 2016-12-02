@@ -413,6 +413,16 @@ footer p a:link,footer p a:visited
 		zoom:305%;
 	}
 	
+	.bar
+	{
+		height:10px;
+	}
+	
+	header
+	{
+		height:80px;
+	}
+	
 	/*font 50% less*/
 	h2
 	{
@@ -424,7 +434,12 @@ footer p a:link,footer p a:visited
 		font-size:125%;
 	}
 	
-	#story, #socialText
+	#story /*lil more than 50%*/
+	{
+		font-size:85%;
+	}
+	
+	#socialText
 	{
 		font-size:75%;
 	}
