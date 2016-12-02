@@ -335,10 +335,6 @@ footer p a:link,footer p a:visited
 /* mobile overrides */
 @media all and (max-width:800px)
 {
-	section
-	{
-		background-color:red;/*TODO*/
-	}
 	
 	/*font 20% less*/
 	h2
@@ -369,10 +365,6 @@ footer p a:link,footer p a:visited
 
 @media all and (max-width:480px), (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 1.5)
 {	
-	section
-	{
-		background-color:green;/*TODO*/
-	}
 
 	/*font 40% less*/
 	h2
@@ -403,10 +395,6 @@ footer p a:link,footer p a:visited
 
 @media all and (max-width:480px) and (max-device-width:1280px), (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 1.5)
 {	
-	section
-	{
-		background-color:yellow;/*TODO*/
-	}
 	
 	body
 	{
@@ -423,6 +411,11 @@ footer p a:link,footer p a:visited
 		height:80px;
 	}
 	
+	.spacer
+	{
+		margin:0.05% 0 0.05% 0;
+	}
+	
 	/*font 50% less*/
 	h2
 	{
@@ -436,7 +429,7 @@ footer p a:link,footer p a:visited
 	
 	#story /*lil more than 50%*/
 	{
-		font-size:85%;
+		font-size:100%;
 	}
 	
 	#socialText
@@ -444,9 +437,9 @@ footer p a:link,footer p a:visited
 		font-size:75%;
 	}
 	
-	.bulletPoint
+	.bulletPoint /*lil more than 50%*/
 	{
-		font-size:90%;
+		font-size:100%;
 	}
 	
 	#footerText
