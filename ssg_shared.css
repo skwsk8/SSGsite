@@ -59,24 +59,15 @@ body
 	height:100%;
 }
 
-.divLeft
-{
-	position:relative;
-	margin:0 -50% 0 0;
-	padding:0;
-	width:50%;
-	height:100%;
-	float:left;
-}
-
 .divRight
 {
 	position:relative;
-	margin:0;
-	padding:0 -50% 0 0;
+	/*margin:0;
+	padding:0 -50% 0 0;*/
 	width:50%;
 	height:100%;
-	float:right;
+	/*float:right;*/
+	margin:0 auto;
 }
 
 .bar
@@ -98,33 +89,21 @@ header
 	top:0;
 	left:0;
 	width:100%;
-	height:180px;
-	background-color:#3385ff;
+	height:300px;
+	background-color:#b0b0b0;
 	border:1px solid black;
-}
-
-#logoTopLeft
-{
-	position:relative;
-	width:auto;
-	height:100% auto;
-	max-width:100%;
-	max-height:100%;
-	margin:0 0 0 10%;
-	padding:0;
-	float:left;
 }
 
 #logoTopRight
 {
+	display:block;
 	position:relative;
 	width:auto;
 	height:100% auto;
 	max-width:100%;
 	max-height:100%;
-	margin:0 10% 0 0;
+	margin:0 auto;
 	padding:0;
-	float:right;
 }
 
 #stoplightContainer
@@ -188,6 +167,7 @@ section
 .sectionWithFloats
 {
 	float:left; /*parent elements with children that float need to float as well or it ignores them in relative spacing*/
+	background-color:#369b34;
 }
 
 .vrLogos
@@ -201,20 +181,79 @@ section
 	float:left;
 }
 
+#divDeveloped
+{
+	position:relative;
+	/*margin:0 -50% 0 0;
+	padding:0;*/
+	width:100%;
+	height:100%;
+	/*float:center;*/
+	margin:0 auto;
+	overflow:hidden;
+	background-color:#b0b0b0;
+}
+
+#logotext
+{
+	margin:5% 0 5% 15%;
+	text-align: left;
+	width:auto;
+	display: inline-block;
+	float: left;
+}
+
+#logoSSG
+{
+	display:inline;
+	position:left;
+	width:35%;
+	height:100% auto;
+	max-width:100%;
+	max-height:100%;
+	margin:0 auto;
+	padding:0;
+	float:left;
+}
+
+#storySection
+{
+	background-color:#8c8714;
+}
+
 #story
 {
 	display:block;
 	width:70% auto;
 	height:auto;
-	margin:2% 15% 2% 15%;
+	margin:0 15% 2% 15%;
+	padding-top: 2px;
 	font-size:150%;
-	font-family:"Tahoma";
+	font-family:"Tahoma"; 
+}
+
+#story p:first-child:first-letter 
+{
+	font-size: 275%;
+	line-height: 45px;
+	padding-top: 10px;
+	padding-right: 4px;
+	padding-left: 0px;
+	font-weight: bold;
+	float : left;
+	color : #000000;
 }
 
 #allEnemies
 {
 	width:70%;
 	margin:0 auto;
+	border:3px solid #505050;
+}
+
+#gameplaySection
+{
+	background-color:#865218;
 }
 
 .youtubeWrapper
@@ -223,6 +262,7 @@ section
 	padding-bottom:39.375%; /* 16:9 for 70%*/
 	height:0;
 	margin:0 15% 0 15%;
+	border:1px solid #505050;
 }
 
 .youtubeWrapper iframe
@@ -232,12 +272,13 @@ section
 	left: 0;
 	width: 100%;
 	height: 100%;
+	border:1px solid #505050;
 }
 
 #bulletPoints
 {
 	text-align:center;
-	margin:2% 5% 2% 5%;
+	margin:2% 4% 2% 4%;
 }
 
 #bulletPointsUL
@@ -260,7 +301,12 @@ section
 	line-height:0;
 }
 
-#socialText
+#pdfSection
+{
+	background-color:#b0b0b0;
+}
+
+#socialText, #pdf
 {
 	position:relative;
 	display:inline-block;
@@ -306,6 +352,13 @@ section
 {
 	clear:both;
 	margin:0.1% 0 0.1% 0;
+}
+
+.clear
+{
+	clear:both;
+	margin:0;
+	height:0;
 }
 
 /* footer */
