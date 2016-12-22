@@ -401,12 +401,12 @@ footer p a:link,footer p a:visited
 {
 	
 	/*font 20% less*/
-	h2
+	h2, #logotext, h2 .lineHeightZero
 	{
 		font-size:280%;
 	}
 	
-	h3
+	h3, h3 .lineHeightZero
 	{
 		font-size:200%;
 	}
@@ -431,12 +431,12 @@ footer p a:link,footer p a:visited
 {	
 
 	/*font 40% less*/
-	h2
+	h2, #logotext, h2 .lineHeightZero
 	{
 		font-size:210%;
 	}
 	
-	h3
+	h3, h3 .lineHeightZero
 	{
 		font-size:150%;
 	}
@@ -482,12 +482,12 @@ footer p a:link,footer p a:visited
 	}
 	
 	/*font 50% less*/
-	h2
+	h2, #logotext, h2 .lineHeightZero
 	{
 		font-size:175%;
 	}
 	
-	h3
+	h3, h3 .lineHeightZero
 	{
 		font-size:125%;
 	}
