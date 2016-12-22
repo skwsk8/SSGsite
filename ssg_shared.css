@@ -184,36 +184,47 @@ section
 #divDeveloped
 {
 	position:relative;
-	/*margin:0 -50% 0 0;
-	padding:0;*/
 	width:100%;
-	height:100%;
-	/*float:center;*/
+	height:auto;
 	margin:0 auto;
-	overflow:hidden;
+	display:block;
 	background-color:#b0b0b0;
+	/* centering magic below */
+	display:-webkit-flex;
+	display:flex;
+	-webkit-align-items:center;
+	align-items:center;
+	-webkit-justify-content:center;
+	justify-content:center;
+}
+
+#divDevelopedLeft
+{
+	position:relative;
+	display:inline-block;
+	width:50%;
+	float:left;
+}
+
+#divDevelopedRight
+{
+	position:relative;
+	display:inline-block;
+	width:50%;
+	float:left;
 }
 
 #logotext
 {
-	margin:5% 0 5% 15%;
-	text-align: left;
-	width:auto;
-	display: inline-block;
-	float: left;
+	display:inline;
+	float:right;
 }
 
 #logoSSG
 {
 	display:inline;
-	position:left;
-	width:35%;
-	height:100% auto;
-	max-width:100%;
-	max-height:100%;
-	margin:0 auto;
-	padding:0;
 	float:left;
+	width:50%;
 }
 
 #storySection
