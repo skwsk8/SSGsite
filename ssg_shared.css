@@ -216,9 +216,14 @@ section
 
 #logotext
 {
-	line-height:1;
 	display:inline;
 	float:right;
+	line-height:0;
+}
+
+#logotext:after
+{
+	content:"Developed By";
 }
 
 #logoSSG
