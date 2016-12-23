@@ -412,6 +412,11 @@ footer p a:link,footer p a:visited
 		font-size:280% !important;
 	}
 	
+	#logotext:after
+	{
+		content:"Developed By";
+	}
+	
 	h3, h3.lineHeightZero
 	{
 		font-size:200% !important;
@@ -442,6 +447,11 @@ footer p a:link,footer p a:visited
 		font-size:210% !important;
 	}
 	
+	#logotext:after
+	{
+		content:"Developed By";
+	}
+
 	h3, h3.lineHeightZero
 	{
 		font-size:150% !important;
@@ -491,6 +501,11 @@ footer p a:link,footer p a:visited
 	h2, #logotext, h2.lineHeightZero
 	{
 		font-size:175% !important;
+	}
+	
+	#logotext:after
+	{
+		content:"Developed By";
 	}
 	
 	h3, h3.lineHeightZero
