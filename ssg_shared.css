@@ -206,6 +206,15 @@ section
 	float:left;
 }
 
+#divDevelopedLeft2
+{
+	position:relative;
+	display:inline-block;
+	width:80%;
+	float:right;
+	font-size:1vw;
+}
+
 #divDevelopedRight
 {
 	position:relative;
