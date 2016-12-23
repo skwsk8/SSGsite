@@ -204,14 +204,6 @@ section
 	display:inline-block;
 	width:50%;
 	float:left;
-}
-
-#divDevelopedLeft2
-{
-	position:relative;
-	display:inline-block;
-	width:80%;
-	float:right;
 	font-size:1vw;
 }
 
@@ -228,11 +220,6 @@ section
 	display:inline;
 	float:right;
 	line-height:0;
-}
-
-#logotext:after
-{
-	content:"Developed By";
 }
 
 #logoSSG
@@ -421,12 +408,6 @@ footer p a:link,footer p a:visited
 		font-size:280% !important;
 	}
 	
-	#logotext:after
-	{
-		content:"Developed By";
-		white-space:nowrap;
-	}
-	
 	h3, h3.lineHeightZero
 	{
 		font-size:200% !important;
@@ -434,12 +415,12 @@ footer p a:link,footer p a:visited
 	
 	#logotext
 	{
-		font-size:0.8vw;
+		font-size:0.7vw;
 	}
 	
 	h3.lineHeightZero
 	{
-		font-size:0.75vw;
+		font-size:0.6vw;
 	}
 	
 	#story, #socialText
@@ -466,12 +447,6 @@ footer p a:link,footer p a:visited
 	{
 		font-size:210% !important;
 	}
-	
-	#logotext:after
-	{
-		content:"Developed By";
-		white-space:nowrap;
-	}
 
 	h3, h3.lineHeightZero
 	{
@@ -480,12 +455,12 @@ footer p a:link,footer p a:visited
 	
 	#logotext
 	{
-		font-size:0.8vw;
+		font-size:0.7vw;
 	}
 	
 	h3.lineHeightZero
 	{
-		font-size:0.75vw;
+		font-size:0.6vw;
 	}
 	
 	#story, #socialText
@@ -534,12 +509,6 @@ footer p a:link,footer p a:visited
 		font-size:175% !important;
 	}
 	
-	#logotext:after
-	{
-		content:"Developed By";
-		white-space:nowrap;
-	}
-	
 	h3, h3.lineHeightZero
 	{
 		font-size:125% !important;
@@ -547,12 +516,12 @@ footer p a:link,footer p a:visited
 	
 	#logotext
 	{
-		font-size:0.8vw;
+		font-size:0.7vw;
 	}
 	
 	h3.lineHeightZero
 	{
-		font-size:0.75vw;
+		font-size:0.6vw;
 	}
 	
 	#story /*lil more than 50%*/
