@@ -216,6 +216,7 @@ section
 
 #logotext
 {
+	line-height:1;
 	display:inline;
 	float:right;
 }
@@ -403,15 +404,12 @@ footer p a:link,footer p a:visited
 	/*font 20% less*/
 	h2, #logotext, h2.lineHeightZero
 	{
-		flex:none;
 		font-size:280% !important;
-		color:red; /*TODO*/
 	}
 	
 	h3, h3.lineHeightZero
 	{
 		font-size:200% !important;
-		color:red; /*TODO*/
 	}
 	
 	#story, #socialText
@@ -436,15 +434,12 @@ footer p a:link,footer p a:visited
 	/*font 40% less*/
 	h2, #logotext, h2.lineHeightZero
 	{
-		flex:none;
 		font-size:210% !important;
-		color:orange; /*TODO*/
 	}
 	
 	h3, h3.lineHeightZero
 	{
 		font-size:150% !important;
-		color:orange; /*TODO*/
 	}
 	
 	#story, #socialText
@@ -490,15 +485,12 @@ footer p a:link,footer p a:visited
 	/*font 50% less*/
 	h2, #logotext, h2.lineHeightZero
 	{
-		flex:none;
 		font-size:175% !important;
-		color:yellow; /*TODO*/
 	}
 	
 	h3, h3.lineHeightZero
 	{
 		font-size:125% !important;
-		color:yellow; /*TODO*/
 	}
 	
 	#story /*lil more than 50%*/
