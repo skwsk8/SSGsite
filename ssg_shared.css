@@ -415,6 +415,7 @@ footer p a:link,footer p a:visited
 	#logotext:after
 	{
 		content:"Developed By";
+		white-space:nowrap;
 	}
 	
 	h3, h3.lineHeightZero
@@ -450,6 +451,7 @@ footer p a:link,footer p a:visited
 	#logotext:after
 	{
 		content:"Developed By";
+		white-space:nowrap;
 	}
 
 	h3, h3.lineHeightZero
@@ -506,6 +508,7 @@ footer p a:link,footer p a:visited
 	#logotext:after
 	{
 		content:"Developed By";
+		white-space:nowrap;
 	}
 	
 	h3, h3.lineHeightZero
