@@ -194,8 +194,8 @@ section
 	display:flex;
 	-webkit-align-items:center;
 	align-items:center;
-	-webkit-justify-content:center;
-	justify-content:center;
+	/*-webkit-justify-content:center;
+	justify-content:center;*/
 }
 
 #divDevelopedLeft
@@ -204,6 +204,7 @@ section
 	display:inline-block;
 	width:50%;
 	float:left;
+	font-size:1vw;
 }
 
 #divDevelopedRight
@@ -218,6 +219,7 @@ section
 {
 	display:inline;
 	float:right;
+	line-height:0;
 }
 
 #logoSSG
@@ -401,14 +403,24 @@ footer p a:link,footer p a:visited
 {
 	
 	/*font 20% less*/
-	h2
+	h2, #logotext, h2.lineHeightZero
 	{
-		font-size:280%;
+		font-size:280% !important;
 	}
 	
-	h3
+	h3, h3.lineHeightZero
 	{
-		font-size:200%;
+		font-size:200% !important;
+	}
+	
+	#logotext
+	{
+		font-size:0.7vw;
+	}
+	
+	h3.lineHeightZero
+	{
+		font-size:0.6vw;
 	}
 	
 	#story, #socialText
@@ -431,14 +443,24 @@ footer p a:link,footer p a:visited
 {	
 
 	/*font 40% less*/
-	h2
+	h2, #logotext, h2.lineHeightZero
 	{
-		font-size:210%;
+		font-size:210% !important;
+	}
+
+	h3, h3.lineHeightZero
+	{
+		font-size:150% !important;
 	}
 	
-	h3
+	#logotext
 	{
-		font-size:150%;
+		font-size:0.7vw;
+	}
+	
+	h3.lineHeightZero
+	{
+		font-size:0.6vw;
 	}
 	
 	#story, #socialText
@@ -482,14 +504,24 @@ footer p a:link,footer p a:visited
 	}
 	
 	/*font 50% less*/
-	h2
+	h2, #logotext, h2.lineHeightZero
 	{
-		font-size:175%;
+		font-size:175% !important;
 	}
 	
-	h3
+	h3, h3.lineHeightZero
 	{
-		font-size:125%;
+		font-size:125% !important;
+	}
+	
+	#logotext
+	{
+		font-size:0.7vw;
+	}
+	
+	h3.lineHeightZero
+	{
+		font-size:0.6vw;
 	}
 	
 	#story /*lil more than 50%*/
