@@ -167,7 +167,7 @@ section
 .sectionWithFloats
 {
 	float:left; /*parent elements with children that float need to float as well or it ignores them in relative spacing*/
-	background-color:#369b34;
+	background-color:#865218;
 }
 
 .vrLogos
@@ -266,7 +266,7 @@ section
 
 #gameplaySection
 {
-	background-color:#865218;
+	background-color:#369b34;
 }
 
 .youtubeWrapper
