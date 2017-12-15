@@ -173,11 +173,11 @@ section
 .vrLogos
 {
 	position:relative;
-	width:25% auto;
+	width:50% auto;
 	height:auto;
 	max-width:25%;
 	max-height:100%;
-	margin:0 4% 0 4%;
+	margin:0 10% 0 12%;
 	float:left;
 }
 
@@ -229,6 +229,11 @@ section
 	width:50%;
 }
 
+#steamlink:link, #steamlink:visited
+{
+	color:#000000;
+}
+
 #storySection
 {
 	background-color:#8c8714;
@@ -266,7 +271,7 @@ section
 
 #gameplaySection
 {
-	background-color:#369b34;
+	background-color:#28428c;
 }
 
 .youtubeWrapper
