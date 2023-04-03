@@ -74,7 +74,7 @@ body
 {
 	position:relative;
 	width:100%;
-	height:20px;
+	height:min(2vw, 2vh);
 	margin:0 auto;
 	padding:0;
 	clear:both;
@@ -89,7 +89,7 @@ header
 	top:0;
 	left:0;
 	width:100%;
-	height:300px;
+	height:auto;
 	background-color:#b0b0b0;
 	border:1px solid black;
 }
@@ -104,8 +104,8 @@ header#breakstuffHeader
 	display:block;
 	position:relative;
 	width:auto;
-	height:100% auto;
-	max-width:100%;
+	height:100%;
+	max-width:50%;
 	max-height:100%;
 	margin:0 auto;
 	padding:0;
@@ -124,7 +124,7 @@ h2
 	text-align:center;
 	font-family:"autour one";
 	font-variant:small-caps;
-	font-size:350%;
+	font-size:3.5vw;
 	color:#000000;
 	text-shadow:0px 0px 3px #b0b0b0;
 }
@@ -137,7 +137,7 @@ h3
 	text-align:center;
 	font-family:"autour one";
 	font-variant:small-caps;
-	font-size:250%;
+	font-size:2.5vw;
 	color:#000000;
 	text-shadow:0px 0px 3px #b0b0b0;
 }
@@ -273,20 +273,20 @@ section
 	height:auto;
 	margin:0 15% 2% 15%;
 	padding-top: 2px;
-	font-size:150%;
+	font-size:1.5vw;
 	font-family:"Tahoma"; 
 }
 
 #story p:first-child:first-letter 
 {
-	font-size: 275%;
+	/*font-size: 2.75vw;
 	line-height: 45px;
 	padding-top: 10px;
 	padding-right: 4px;
 	padding-left: 0px;
 	font-weight: bold;
 	float : left;
-	color : #000000;
+	color : #000000;*/
 }
 
 #allEnemies
@@ -341,7 +341,7 @@ section
 
 .bulletPoint
 {
-	font-size:180%;
+	font-size:1.8vw;
 	font-family:"Tahoma";
 	float:left;
 }
@@ -367,7 +367,7 @@ section
 	margin:0 auto;
 	white-space:pre;
 	line-height:0;
-	font-size:150%;
+	font-size:1.5vw;
 	font-family:"Tahoma";
 }
 
@@ -417,7 +417,7 @@ footer
 	width:100%;
 	height:auto;
 	font-family:sans-serif;
-	font-size:100%;
+	font-size:1vw;
 	margin:0 auto;
 	text-align:center;
 }
@@ -440,7 +440,7 @@ footer p a:link,footer p a:visited
 {
 	
 	/*font 20% less*/
-	h2, #logotext, h2.lineHeightZero
+	/*h2, #logotext, h2.lineHeightZero
 	{
 		font-size:280% !important;
 	}
@@ -473,14 +473,14 @@ footer p a:link,footer p a:visited
 	#footerText
 	{
 		font-size:80%;
-	}
+	}*/
 }
 
 @media all and (max-width:480px), (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 1.5)
 {	
 
 	/*font 40% less*/
-	h2, #logotext, h2.lineHeightZero
+	/*h2, #logotext, h2.lineHeightZero
 	{
 		font-size:210% !important;
 	}
@@ -513,7 +513,7 @@ footer p a:link,footer p a:visited
 	#footerText
 	{
 		font-size:60%;
-	}
+	}*/
 }
 
 @media all and (max-width:480px) and (max-device-width:1280px), (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 1.5)
@@ -524,7 +524,7 @@ footer p a:link,footer p a:visited
 		zoom:305%;
 	}
 	
-	.bar
+	/*.bar
 	{
 		height:5px;
 	}
@@ -532,7 +532,7 @@ footer p a:link,footer p a:visited
 	header
 	{
 		height:80px;
-	}
+	}*/
 	
 	footer .spacer
 	{
@@ -541,7 +541,7 @@ footer p a:link,footer p a:visited
 	}
 	
 	/*font 50% less*/
-	h2, #logotext, h2.lineHeightZero
+	/*h2, #logotext, h2.lineHeightZero
 	{
 		font-size:175% !important;
 	}
@@ -561,7 +561,7 @@ footer p a:link,footer p a:visited
 		font-size:0.6vw;
 	}
 	
-	#story /*lil more than 50%*/
+	#story
 	{
 		font-size:100%;
 	}
@@ -571,7 +571,7 @@ footer p a:link,footer p a:visited
 		font-size:75%;
 	}
 	
-	.bulletPoint /*lil more than 50%*/
+	.bulletPoint
 	{
 		font-size:100%;
 	}
@@ -579,5 +579,5 @@ footer p a:link,footer p a:visited
 	#footerText
 	{
 		font-size:50%;
-	}
+	}*/
 }

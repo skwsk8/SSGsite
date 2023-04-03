@@ -1,7 +1,7 @@
-<!--HTML5 - Single Step Games, LLC (c)2018-->
+<!--HTML5 - Single Step Games, LLC (c)2023-->
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<!--[if lt IE 9]>
 		<script>
@@ -15,11 +15,11 @@
 	<![endif]-->
 	<title>Single Step Games - Break Stuff VR</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<link href="ssg_shared.css" rel="stylesheet" type="text/css">
+	<link href="ssg_breakstuff.css" rel="stylesheet" type="text/css">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<script src="ssg_scripts_shared.js"></script>
 </head>
-<body onload="getFooterDate('footerText',2018);" itemscope itemtype="http://schema.org/WebPage">
+<body onload="dynamicVideo();carousel();getFooterDate('footerText',2023);" itemscope itemtype="http://schema.org/WebPage">
 	<header id="breakstuffHeader">
 		<div class="container">
 			<div class="divRight">
@@ -27,114 +27,284 @@
 			</div>
 		</div>
 	</header>
-	<div class="bar"></div>
+	<div class="grad"></div>
 	<section>
-		<div id="stoplightContainer" class="container">
-			<img class="fullBarImg" src="Images/BreakStuffSmashForCashStoplight1200_400.png" alt="BREAK STUFF VR screenshot" />
-		</div>
-	</section>
-	<div class="bar"></div>
-	<section class="sectionWithFloatsBreakStuff">
-		<h2>Coming Soon</h2>
-		<!--<h2><a id="steamlink" href="http://store.steampowered.com/app/571660/Psyche_Soldier_VR/" target="_blank">Available Now On Steam</a></h2>-->
-		<div>
-			<img class="vrLogosBreakStuff" src="Images/ViveLogo.png" alt="HTC Vive logo" />
-			<img class="vrLogosBreakStuff" src="Images/PSVRLogo.png" alt="Playstation VR logo" />
-			<img class="vrLogosBreakStuff" src="Images/OculusLogo.png" alt="Oculus Touch logo" />
+		<div id="dynamicVideoImageContainer">
+			<video autoplay="" loop="" muted="" poster="Images/BreakStuffVrWebLoopScreenshot.png" id="dynamicVideo"></video>
+			<img id="dynamicVideoImage" src="Images/BreakStuffVrWebLoopScreenshot.png" alt="Break Stuff VR gameplay" />
 		</div>
 		<div class="spacer"><br></div>
 	</section>
-	<div class="bar"></div>
-	<section id="gameplaySectionBreakStuff">
-		<h2>Gameplay</h2>
-		<!--<div class="youtubeWrapper">
-			<iframe src="https://www.youtube.com/embed/6X6hw6JB17s" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-		</div>-->
-		<div id="bulletPoints">
-			<ul id="bulletPointsUL">
-				<li class="bulletPoint">Challenge yourself to break everything in each stage</li><br>
-				<li class="bulletPoint">Break vases, glasses, watermelons, and more!</li><br>
-				<li class="bulletPoint">Experience the excitement of discovering entertaining surprises</li><br>
-				<li class="bulletPoint">Destroy an entire car!</li><br>
-				<li class="bulletPoint">Bash lots of pinatas, statues, and fax machines</li><br>
-				<li class="bulletPoint">Play four throwing stages and four melee bonus stages</li><br>
-				<li class="bulletPoint">Destroy objects and break records as you rise up the leaderboards</li><br>
-				<li class="bulletPoint">Smash away your stress!</li><br>
-			</ul>
-		</div>
-	</section>
-	<div class="bar"></div>
-	<section id="storySectionBreakStuff">
-		<h2>Story</h2>
-		<div id="story">
-			<p>In a parallel universe, there exists a civilization of robots so advanced they discovered our world...
-			<br><br><br>
-			The robots bridged their world to ours through virtual reality! Immediately fascinated with our way of being,
-			the robots put their factories into overdrive, making mountains of excess human products. Proud of their creations,
-			the products were shown to the humans. The robots' world changed when one of the humans accidentally bumped into a glass jar,
-			breaking it on the ground...
-			<br><br>
-			The intense emotional reaction of the humans intruiged the robots so much, they insisted more glass jars be broken. The amusement
-			was contagious, triggering a robotic obsession that spawned the most popular robot show of all time, "Smash for Cash"!
-			<br><br>
-			Robots have been enticing humans through virtual reality to participate in the show. Contestants break a large variety of objects
-			while aiming for high scores and discovering all of the entertaining surprises the robots have hidden in each stage.
-			<br><br>
-			Are you the next virtual reality star? Play "Smash for Cash" in BREAK STUFF VR to find out!
-			<br><br>
-			The robots are watching...
-			</p>
-		</div>
-		<div id="allEnemies">
-			<img class="fullBarImg" src="Images/BreakStuffSceneWithRobot.png" alt="BREAK STUFF VR screenshot" />
+	<section>
+		<h2>Available Now</h2>
+		<div class="storediv">
+			<img class="storeimg" src="Images/PSVR2_Logo_CMYK_220104.png" alt="Playstation&reg; VR2 logo" />
+			<button class="storebutton">PlayStation&trade; Store</button>
+			<!--<h2><a id="steamlink" href="http://store.steampowered.com/app/571660/Psyche_Soldier_VR/" target="_blank">Available Now On Steam</a></h2>-->
 		</div>
 		<div class="spacer"><br></div>
 	</section>
-	<div class="bar"></div>
-	<section>
-		<div id="divDeveloped">
-			<div id="divDevelopedLeft">
-				<h2 id="logotext">Developed By</h2>
-			</div>
-			<div id="divDevelopedRight">
-				<img id="logoSSG" src="Images/SSGLogoFullHighlight1024_512.png" alt="Single Step Games logo" />
-			</div>
-			<div class="clear"><br></div>
+	<section id="quotecontainer">
+		<div class="spacer"><br></div>
+		<div class="quotes">
+			<q>It's very fun to break things without consequences :)<span><br></span></q>
+			<p>~ Analeah V.</p>
 		</div>
+		<div class="quotes">
+			<q>Very entertaining! Lots of fun!<span><br></span></q>
+			<p>~ Aiden O.</p>
+		</div>
+		<div class="quotes">
+			<q>I loved breaking stuff!<span><br></span></q>
+			<p>~ Vera B.</p>
+		</div>
+		<div class="quotes">
+			<q>Very fun. Love to break things :)<span><br></span></q>
+			<p>~ Morty F.</p>
+		</div>
+		<div class="quotes">
+			<q>This is the best part of every VR game anyway.<span><br></span></q>
+			<p>~ Ken B.</p>
+		</div>
+		<div class="quotes">
+			<q>Very fun game, very smooth and easy to understand.<span><br></span></q>
+			<p>~ Eli M.</p>
+		</div>
+		<div class="quotes">
+			<q>Lots of fun, lots of options!<span><br></span></q>
+			<p>~ Kayla I.</p>
+		</div>
+		<div class="quotes">
+			<q>Very therapeutic 11/10<span><br></span></q>
+			<p>~ Kyle T.</p>
+		</div>
+		<div class="quotes">
+			<q>LOTS OF CATHARTIC FUN!<span><br></span></q>
+			<p>~ William W.</p>
+		</div>
+		<div class="quotes">
+			<q>Cathartic!<span><br></span></q>
+			<p>~ Mike I.</p>
+		</div>
+		<div class="quotes">
+			<q>GREAT FUN, SUPER SATISFYING TO BREAK STUFF!<span><br></span></q>
+			<p>~ Brian W.</p>
+		</div>
+		<div class="quotes">
+			<q>Really fun and intuitive.<span><br></span></q>
+			<p>~ Tony H.</p>
+		</div>
+		<div class="quotes">
+			<q>It's really fun and amazing!<span><br></span></q>
+			<p>~ Amelia N.</p>
+		</div>
+		<div class="quotes">
+			<q>So funny + stress relieving.<span><br></span></q>
+			<p>~ Rachel T.</p>
+		</div>
+		<div class="quotes">
+			<q>Fun!!!!!<span><br></span></q>
+			<p>~ Elsie C.</p>
+		</div>
+		<div class="quotes">
+			<q>Fun to destroy!!<span><br></span></q>
+			<p>~ Caleb B.</p>
+		</div>
+		<div class="quotes">
+			<q>I really liked it! 10/10 from me.<span><br></span></q>
+			<p>~ Aiden E.</p>
+		</div>
+		<div class="quotes">
+			<q>It was great, easy to get into!<span><br></span></q>
+			<p>~ Kevin K.</p>
+		</div>
+		<div class="quotes">
+			<q>Awesome gameplay.<span><br></span></q>
+			<p>~ Rafi A.</p>
+		</div>
+		<div class="quotes">
+			<q>Best game ever.<span><br></span></q>
+			<p>~ Noah J.</p>
+		</div>
+		<div class="quotes">
+			<q>So real and awesome.<span><br></span></q>
+			<p>~ Brennan P.</p>
+		</div>
+		<div class="quotes">
+			<q>Best VR game ever.<span><br></span></q>
+			<p>~ Hunter I.</p>
+		</div>
+		<div class="quotes">
+			<q>Love the variety!<span><br></span></q>
+			<p>~ Alexander C.</p>
+		</div>
+		<div class="quotes">
+			<q>Amazing and immersive! I could have spent hours in the Carnival.<span><br></span></q>
+			<p>~ Zach M.</p>
+		</div>
+		<div class="quotes">
+			<q>Very fun. Great for venting frustration :)<span><br></span></q>
+			<p>~ Fred O.</p>
+		</div>
+		<div class="quotes">
+			<q>AWESOME GAME IDEA, LOVE IT!<span><br></span></q>
+			<p>~ Kelson H.</p>
+		</div>
+		<div class="quotes">
+			<q>It was real fun and engaging :)<span><br></span></q>
+			<p>~ Spenser W.</p>
+		</div>
+		<div class="quotes">
+			<q>Lit.<span><br></span></q>
+			<p>~ K.J.</p>
+		</div>
+		<div class="quotes">
+			<q>I love breaking the car so thoroughly!<span><br></span></q>
+			<p>~ Alicia D.</p>
+		</div>
+		<div class="quotes">
+			<q>Highly entertaining!<span><br></span></q>
+			<p>~ Sam T.</p>
+		</div>
+		<div class="quotes">
+			<q>Loved it, good all around fun 10/10<span><br></span></q>
+			<p>~ Matthew B.</p>
+		</div>
+		<div class="quotes">
+			<q>Strangely relaxing 9/10<span><br></span></q>
+			<p>~ Tre R.</p>
+		</div>
+		<div class="quotes">
+			<q>Love it! Awesome party game.<span><br></span></q>
+			<p>~ Trey M.</p>
+		</div>
+		<div class="quotes">
+			<q>I love everything about it!<span><br></span></q>
+			<p>~ Zach V.</p>
+		</div>
+		<div class="quotes">
+			<q>A fun catharsis game.<span><br></span></q>
+			<p>~ Dean K.</p>
+		</div>
+		<div class="quotes">
+			<q>AWESOME!<span><br></span></q>
+			<p>~ John W.</p>
+		</div>
+		<div class="quotes">
+			<q>So awesome!! 10/10 recommend!<span><br></span></q>
+			<p>~ Jackie H.</p>
+		</div>
+		<div class="quotes">
+			<q>Amazing game! Great way to release energy! :)<span><br></span></q>
+			<p>~ Ava R.</p>
+		</div>
+		<div class="quotes">
+			<q>Very, very fun! Loved breaking stuff and lots to destroy :)<span><br></span></q>
+			<p>~ Keleigh L.</p>
+		</div>
+		<div class="quotes">
+			<q>Great game! Lots of fun and easy to play.<span><br></span></q>
+			<p>~ Christopher H.</p>
+		</div>
+		<div class="quotes">
+			<q>Great game! What's not to love? Both kids loved it!<span><br></span></q>
+			<p>~ Melissa F.</p>
+		</div>
+		<div class="clear"><br></div>
 	</section>
-	<div class="bar"></div>
-	<section class="sectionWithFloatsBreakStuff" itemscope itemtype="http://schema.org/Corporation">
-		<h2 class="lineHeightZero">More Info</h2>
-		<br>
-		<h3 class="lineHeightZero">Follow on social media</h3>
+	<section>
+		<div class="spacer"><br></div>
+		<div class="screenshotsdiv">
+			<img class="screenshotsimg" src="Images/BreakStuffOfficeConstruction_1920_1080.png" alt="BREAK STUFF VR screenshot" />
+			<img class="screenshotsimg" src="Images/BreakStuffParkingLotLauncher_1920_1080.png" alt="BREAK STUFF VR screenshot" />
+			<img class="screenshotsimg" src="Images/BreakStuffBonusShowcase_1920_1080.png" alt="BREAK STUFF VR screenshot" />
+		</div>
+		<div class="spacer"><br></div>
+	</section>
+	<section>
+		<div class="youtubeWrapper"> <!--TODO trailer-->
+			<iframe src="https://www.youtube.com/embed/6X6hw6JB17s" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+		</div>
+		<div class="spacer"><br></div>
+	</section>
+	<section itemscope itemtype="http://schema.org/Corporation">
+		<div id="socialContainer">
+			<div id="socialContainer2">
+				<img id="ssgLOGO2" src="Images/SSGLogoFullHighlight1024_512.png" alt="Single Step Games logo" />
+			</div>
+		</div>
+		<div class="clear"><br></div>
 		<div id="socialText">
-			<p><b>facebook.com/SingleStepGames          @SingleStepGames</b></p>
+			<p><b>@SingleStepGames</b></p>
 		</div>
 		<div id="socialContainer">
 			<div id="socialContainer2">
-				<a href="https://www.facebook.com/singlestepgames" target="_blank"><img class="socialLogos" src="Images/UIIconFacebook.png" alt="Facebook logo" /></a>
 				<a href="https://twitter.com/singlestepgames" target="_blank"><img class="socialLogos" src="Images/UIIconTwitter.png" alt="Twitter logo" /></a>
 				<a href="https://www.instagram.com/singlestepgames/" target="_blank"><img class="socialLogos" src="Images/UIIconInstagram.png" alt="Instagram logo" /></a>
+				<a href="https://www.facebook.com/singlestepgames" target="_blank"><img class="socialLogos" src="Images/UIIconFacebook.png" alt="Facebook logo" /></a>
 			</div>
 		</div>
 		<div class="spacer"><br></div>
 	</section>
-	<div class="bar"></div>
-	<section id="pdfSection">
-		<br>
-		<h2 class="lineHeightZero">Legal</h2>
-		<div id="pdf">
-			<p><b><a href="BreakStuffVrEULA.pdf" download="BreakStuffVrEULA.pdf" target="_blank">BREAK STUFF VR EULA</a></b>	  <b><a href="BreakStuffVrPrivacyPolicy.pdf" download="BreakStuffVrPrivacyPolicy.pdf" target="_blank">BREAK STUFF VR Privacy Policy</a></b></p>
-			<p><b><a href="PsycheSoldierVrEULA.pdf" download="PsycheSoldierVrEULA.pdf" target="_blank">Psyche Soldier VR EULA</a></b>	  <b><a href="PsycheSoldierVrPrivacyPolicy.pdf" download="PsycheSoldierVrPrivacyPolicy.pdf" target="_blank">Psyche Soldier VR Privacy Policy</a></b></p>
-		</div>
-		<div class="spacer"><br></div>
+	<section>
+		<div class="gradEnd"></div>
 	</section>
-	<footer itemscope itemtype="http://schema.org/Corporation">
-		<div class="spacer"><br></div>
-		<p><b>Press: </b><a href="ssg_press_kit.html">Press Kit</a></p>
-		<p><b>Psyche Soldier Page: </b><a href="ssg_page_psyche_soldier.html">Psyche Soldier VR</a></p>
-		<p><b>E-mail: </b><a href="mailto:Steve@SingleStepGames.com" target="_blank" itemprop="email">Steve@SingleStepGames.com</a></p>
-		<p id="footerText">Copyright © 2016 Single Step Games, LLC. SINGLE STEP GAMES, BREAK STUFF VR, and PSYCHE SOLDIER VR are trademarks of Single Step Games, LLC. All rights reserved. All other trademarks and trade names are property of their respective owners.</p>
-	</footer>
+	<div id="bottomGradEnd">
+		<section>
+			<br>
+			<h2 class="lineHeightZero">Legal</h2>
+			<div id="legalcontainer">
+				<div class="legaldiv" id="legaldivleft">
+					<h4 class="legaltitle lineHeightZero">EULA</h4>
+					<div class="legalreftopleft">
+						<a href="BreakStuffVrEndUserLicenseAgreement_English.pdf" target="_blank">English</a>
+					</div>
+					<div class="legalreftopright">
+						<a href="BreakStuffVrEndUserLicenseAgreement_French.pdf" target="_blank">French</a>
+					</div>
+					<div class="legalrefbottom">
+						<a href="BreakStuffVrEndUserLicenseAgreement_German.pdf" target="_blank">German</a>
+					</div>
+					<div class="legalrefbottom">
+						<a href="BreakStuffVrEndUserLicenseAgreement_Italian.pdf" target="_blank">Italian</a>
+					</div>
+					<div class="legalrefbottom">
+						<a href="BreakStuffVrEndUserLicenseAgreement_Spanish.pdf" target="_blank">Spanish</a>
+					</div>
+					<div class="spacer"><br></div>
+				</div>
+				<div class="legaldiv" id="legaldivright">
+					<h4 class="legaltitle lineHeightZero">Privacy</h4>
+					<div class="legalreftopleft">
+						<a href="BreakStuffVrPrivacyPolicy_English.pdf" target="_blank">English</a>
+					</div>
+					<div class="legalreftopright">
+						<a href="BreakStuffVrPrivacyPolicy_French.pdf" target="_blank">French</a>
+					</div>
+					<div class="legalrefbottom">
+						<a href="BreakStuffVrPrivacyPolicy_German.pdf" target="_blank">German</a>
+					</div>
+					<div class="legalrefbottom">
+						<a href="BreakStuffVrPrivacyPolicy_Italian.pdf" target="_blank">Italian</a>
+					</div>
+					<div class="legalrefbottom">
+						<a href="BreakStuffVrPrivacyPolicy_Spanish.pdf" target="_blank">Spanish</a>
+					</div>
+					<div class="spacer"><br></div>
+				</div>
+			</div>
+			<div class="spacer"><br></div>
+		</section>
+		<footer itemscope itemtype="http://schema.org/Corporation">
+			<div class="spacer"><br></div>
+			<h2 class="lineHeightZero">Info</h2>
+			<p><b>Playstation&trade; Store Page: </b><a href="http://store.steampowered.com/app/571660/Psyche_Soldier_VR/" target="_blank">BREAK STUFF VR</a></p>
+			<p><b>Press: </b><a href="ssg_press_kit.html">Press Kit</a></p>
+			<p><b>E-mail: </b><a href="mailto:Steve@SingleStepGames.com" target="_blank" itemprop="email">Steve@SingleStepGames.com</a></p>
+			<p><b>Psyche Soldier Page: </b><a href="ssg_page_psyche_soldier.html">Psyche Soldier VR</a></p>
+			<p id="footerText">© 2023 Single Step Games, LLC. SINGLE STEP GAMES, BREAK STUFF VR, and PSYCHE SOLDIER VR are trademarks of Single Step Games, LLC. All rights reserved. All other trademarks and trade names are property of their respective owners.</p>
+			<div class="spacer"><br><br></div>
+		</footer>
+	</div>
 </body>
 </html>
