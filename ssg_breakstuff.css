@@ -74,7 +74,7 @@ body
 {
 	position:relative;
 	width:100%;
-	height:2vh;
+	height:min(1vw, 2vh);
 	margin:0 auto;
 	padding:0;
 	clear:both;

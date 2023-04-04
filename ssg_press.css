@@ -74,7 +74,7 @@ body
 {
 	position:relative;
 	width:100%;
-	height:min(2vw, 2vh);
+	height:min(1vw, 2vh);
 	margin:0 auto;
 	padding:0;
 	clear:both;
@@ -97,13 +97,13 @@ header
 #logoTopRight
 {
 	display:block;
-	position:relative;
+	/*position:relative;
 	width:auto;
-	height:100%;
+	height:100%;*/
 	max-width:50%;
-	max-height:100%;
+	/*max-height:50%;*/
 	margin:0 auto;
-	padding:0;
+	/*padding:0;*/
 }
 
 #stoplightContainer
@@ -304,8 +304,8 @@ section
 }
 
 .ratingImg {
-	width:auto !important;
-	height:min(10vw, 10vh) !important;
+	width:12.5% !important;
+	height:20% !important;
 	float:left;
 }
 
@@ -314,6 +314,10 @@ section
 	margin:0;
 	height:0;
 	float:none;
+}
+
+.storeLink {
+	font-size:0.75vw;
 }
 
 #storySection
@@ -377,7 +381,6 @@ section
 
 #bulletPoints
 {
-	text-align:center;
 	margin:2% 4% 2% 4%;
 }
 
@@ -488,7 +491,15 @@ footer p a:link,footer p a:visited
 /* mobile overrides */
 @media all and (max-width:800px)
 {
-	
+	.pressKit
+	{
+		font-size:0.75vw;
+	}
+
+	.pressKit h3
+	{
+		font-size:1vw;
+	}
 	/*font 20% less*/
 	/*h2, #logotext, h2.lineHeightZero
 	{
