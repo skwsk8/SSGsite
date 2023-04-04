@@ -317,7 +317,7 @@ section
 }
 
 .storeLink {
-	font-size:1em;
+	font-size:min(1rem, min(1em, vmin));
 }
 
 #storySection
