@@ -317,7 +317,7 @@ section
 }
 
 .storeLink {
-	font-size:min(1rem, min(1em, vmin));
+	font-size:0.7vw !important;
 }
 
 #storySection
@@ -491,15 +491,6 @@ footer p a:link,footer p a:visited
 /* mobile overrides */
 @media all and (max-width:800px)
 {
-	.pressKit
-	{
-		font-size:0.75vw;
-	}
-
-	.pressKit h3
-	{
-		font-size:1vw;
-	}
 	/*font 20% less*/
 	/*h2, #logotext, h2.lineHeightZero
 	{
