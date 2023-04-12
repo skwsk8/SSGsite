@@ -7,7 +7,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 body
 {
-	line-height:1.3;
+	line-height:1;
 }
 ol, ul
 {
@@ -28,6 +28,10 @@ table
 	border-spacing:0;
 }
 /* end of resets */
+
+html {
+	font-size:16px; /*setting browser root font-size for rem*/
+}
 
 @font-face
 {
@@ -125,9 +129,11 @@ h2
 	text-align:center;
 	font-family:"autour one";
 	font-variant:small-caps;
-	font-size:3.5vw;
+	font-size:min(3.5vw,4rem);
 	color:#000000;
 	text-shadow:0px 0px 3px #b0b0b0;
+	margin-block-start: 0.25em;
+    margin-block-end: 0.25em;
 }
 
 h3
@@ -138,7 +144,7 @@ h3
 	text-align:center;
 	font-family:"autour one";
 	font-variant:small-caps;
-	font-size:2.5vw;
+	font-size:mind(2.5vw,3rem);
 	color:#000000;
 	text-shadow:0px 0px 3px #b0b0b0;
 }
@@ -151,7 +157,7 @@ h4
 	text-align:center;
 	font-family:"autour one";
 	font-variant:small-caps;
-	font-size:2vw;
+	font-size:min(2vw,2rem);
 	color:#000000;
 	text-shadow:0px 0px 3px #b0b0b0;
 }
@@ -277,7 +283,7 @@ section
 
 .storeimg
 {
-	width: 50%;
+	width: 40%;
 	height:auto;
 }
 
@@ -286,7 +292,7 @@ section
 	padding-bottom: 0.25vw;
 	padding-left: 1.5vw;
 	padding-right: 1.5vw;
-	font-size: 1vw;
+	font-size:min(1.25vw,1.25rem);
 	line-height:3;
 	white-space:nowrap;
 	cursor: pointer;
@@ -302,7 +308,8 @@ section
 	border-radius: 0.5vw;
 	box-shadow: 0 0.5vw #999;
 	height:80%;
-	max-width:35%;
+	width:30%;
+	max-width:40%;
 	max-height:100%;
 }
 
@@ -325,7 +332,7 @@ section
 
 .quotes {
 	text-align:center;
-	font-size:1.25vw;
+	font-size:min(1.25vw,2rem);
 }
 
 q
@@ -378,7 +385,7 @@ q
 	display:inline-block;
 	width:50%;
 	float:left;
-	font-size:1vw;
+	font-size:min(1vw,1rem);
 }
 
 #divDevelopedRight
@@ -427,13 +434,13 @@ q
 	height:auto;
 	margin:0 15% 2% 15%;
 	padding-top: 2px;
-	font-size:1.5vw;
+	font-size:min(1.5vw,1.5rem);
 	font-family:"Tahoma"; 
 }
 
 #story p:first-child:first-letter 
 {
-	font-size: 2.75vw;
+	font-size:min(2.75vw,2.75rem);
 	line-height: 45px;
 	padding-top: 10px;
 	padding-right: 4px;
@@ -495,7 +502,7 @@ q
 
 .bulletPoint
 {
-	font-size:1.8vw;
+	font-size:min(1.8vw,1.8rem);
 	font-family:"Tahoma";
 	float:left;
 }
@@ -521,7 +528,7 @@ q
 	margin:0 auto;
 	white-space:pre;
 	line-height:0;
-	font-size:1.25vw;
+	font-size:min(1.25vw,1.25rem);
 	font-family:"Tahoma";
 	text-align:center;
 }
@@ -599,13 +606,13 @@ q
 	margin-left:-4%;
 	margin-bottom:15%;
 	line-height:0;
-	font-size:1.5vw;
+	font-size:min(1.5vw,1.5rem);
 }
 
 .legalref {
 	font-family: 'Noto Sans', sans-serif;
 	text-align:center;
-	font-size:0.8vw;
+	font-size:min(0.8vw,0.8rem);
 }
 
 #pdf
@@ -619,7 +626,7 @@ q
 	margin:0 auto;
 	white-space:pre;
 	line-height:0;
-	font-size:1.5vw;
+	font-size:min(1.5vw,1.5rem);
 	font-family:"Tahoma";
 }
 
@@ -652,7 +659,7 @@ footer
 	width:100%;
 	height:auto;
 	font-family:sans-serif;
-	font-size:1vw;
+	font-size:min(1vw,1rem);
 	margin:0 0 0 0;
 	text-align:center;
 }
@@ -774,12 +781,12 @@ footer p a:link,footer p a:visited
 @media all and (max-width:480px) and (max-device-width:1280px), (min-resolution: 1.5dppx), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 1.5)
 {	
 	
-	body
+	/*body
 	{
 		zoom:305%;
 	}
 	
-	/*.bar
+	.bar
 	{
 		height:5px;
 	}
