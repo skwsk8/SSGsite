@@ -330,9 +330,13 @@ section
 	text-align:center;
 }
 
-.quotes {
+#quoteDiv {
 	text-align:center;
 	font-size:min(1.25vw,2rem);
+}
+
+#quote {
+	
 }
 
 q
@@ -341,6 +345,10 @@ q
 	vertical-align: middle;
 	line-height: normal;
 	font-style: italic;
+}
+
+#quoteName {
+	
 }
 
 .screenshotsdiv
