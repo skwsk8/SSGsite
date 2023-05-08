@@ -623,6 +623,14 @@ q
 	font-size:min(0.8vw,0.8rem);
 }
 
+.legalParagraph {
+	width:80%;
+	margin-left:10%;
+	font-family: 'Noto Sans', sans-serif;
+	text-align:left;
+	font-size:1rem;
+}
+
 #pdf
 {
 	position:relative;
