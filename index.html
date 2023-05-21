@@ -1,112 +1,394 @@
-<!--HTML5 - Single Step Games, LLC (c)2023-->
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<!--[if lt IE 9]>
-		<script>
-			document.createElement('header');
-			document.createElement('nav');
-			document.createElement('section');
-			document.createElement('article');
-			document.createElement('aside');
-			document.createElement('footer');
-		</script>
-	<![endif]-->
-	<title>Single Step Games - Break Stuff VR</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
-	<link href="ssg_breakstuff.css" rel="stylesheet" type="text/css">
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<script src="ssg_scripts_shared.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<title>Break Stuff VR</title>
+	<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee&amp;display=swap">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aclonica&amp;display=swap">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme&amp;display=swap">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Akaya+Telivigala&amp;display=swap">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aldrich&amp;display=swap">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Calistoga&amp;display=swap">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Carter+One&amp;display=swap">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chelsea+Market&amp;display=swap">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chewy&amp;display=swap">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed&amp;display=swap">
+	<link rel="stylesheet" href="assets/css/swiper-icons.css">
+	<link rel="stylesheet" href="assets/css/animate.min.css">
+	<link rel="stylesheet" href="assets/css/Lightbox-Gallery-baguetteBox.min.css">
+	<link rel="stylesheet" href="assets/css/Simple-Slider-swiper-bundle.min.css">
+	<link rel="stylesheet" href="assets/css/Simple-Slider.css">
+	<link rel="stylesheet" href="assets/css/styles.css">
+	<link rel="stylesheet" href="assets/css/Video-Parallax-Background-v3.css">
 </head>
-<body onload="dynamicVideo();carousel();getFooterDate('footerText',2023);" itemscope itemtype="http://schema.org/WebPage">
-	<header id="breakstuffHeader">
-		<div class="container">
-			<div class="divRight">
-				<img id="logoTopRight" src="Images/BreakStuffVRlogo_910_512.png" alt="BREAK STUFF VR logo" />
+
+<body onload="getFooterDate('footerText',2023,false);">
+	<div id="videoContainer" class="mobile-background">
+		<div class="container-fluid d-flex justify-content-center align-items-center align-content-center video-parallax-container" style="background:rgba(0,0,0,0.4);">
+			<div class="row">
+				<div class="col-12 text-center d-sm-flex d-md-flex d-lg-flex flex-column justify-content-sm-center align-items-sm-center justify-content-md-center align-items-md-center justify-content-lg-center align-items-lg-center">
+					<img class="img-fluid logoanim" src="assets/img/BreakStuffVRlogo_910_512.png">
+						<a href="https://store.playstation.com/en-us/concept/10007380">
+							<h3 class="text-uppercase text-center text-bg-danger border rounded-pill border-0 shadow-none flash animated infinite avaialblesoon" style="padding-bottom: 6px;padding-top: 10px;margin-top: 20px;padding-right: 30px;padding-left: 30px;font-family: Aldrich, sans-serif;">Available Soon!</h3>
+						</a>
+					<img src="assets/img/PSVR2_Logo_CMYK_220104.png" style="width: 253px;margin-top: 14px;">
+					<hr class="visually-hidden" style="width: 30vw;opacity: 0.06;border-width: 4px;border-color: var(--bs-body-bg);">
+				</div>
 			</div>
+			<video id="videoIntro" autoplay="" loop="" muted="">
+				<source src="https://breakstuffvr.com/Videos/BreakStuffVrWebLoop.mp4" type="video/mp4" wp-acf="[{'type':'url','name':'video','label':'Video','wrapper':{'width':30}}]" wp-attr="[{'target':'src','replace':'%1'}]">
+			</video>
 		</div>
-	</header>
-	<div class="grad"></div>
-	<section>
-		<div id="dynamicVideoImageContainer">
-			<video autoplay="" loop="" muted="" poster="Images/BreakStuffVrWebLoopScreenshot.png" id="dynamicVideo"></video>
-			<img id="dynamicVideoImage" src="Images/BreakStuffVrWebLoopScreenshot.png" alt="Break Stuff VR gameplay" />
-		</div>
-		<div class="spacer"></div>
-	</section>
-	<section>
-		<br>
-		<h2>Available Soon!</h2>
-		<div class="storediv">
-			<img class="storeimg" src="Images/PSVR2_Logo_CMYK_220104.png" alt="PlayStation&reg; VR2 logo" />
-			<button class="storebutton" onclick="window.location.href='https://store.playstation.com/en-us/concept/10007380';">PlayStation&trade; Store</button>
-		</div>
-		<div class="spacer"><br></div>
-	</section>
-	<section id="quotecontainer">
-		<div id="quoteDiv">
-			<q id="quote">It's very fun to break things without consequences :)<span><br></span></q>
-			<p id="quoteName">~ Analeah V.</p>
-		</div>
-		<div class="clear"></div>
-	</section>
-	<section>
-		<div class="spacer"><br></div>
-		<div class="screenshotsdiv">
-			<img class="screenshotsimg" src="Images/BreakStuffOfficeConstruction_1920_1080.png" alt="BREAK STUFF VR screenshot" />
-			<img class="screenshotsimg" src="Images/BreakStuffParkingLotLauncher_1920_1080.png" alt="BREAK STUFF VR screenshot" />
-			<img class="screenshotsimg" src="Images/BreakStuffBonusShowcase_1920_1080.png" alt="BREAK STUFF VR screenshot" />
-		</div>
-		<div class="spacer"><br></div>
-	</section>
-	<!--<section>
-		<div class="youtubeWrapper"> TODO trailer
-			<iframe src="https://www.youtube.com/embed/6X6hw6JB17s" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
-		</div>
-		<div class="spacer"><br></div>
-	</section>-->
-	<section itemscope itemtype="http://schema.org/Corporation">
-		<div id="socialContainer">
-			<div id="socialContainer2">
-				<img id="ssgLOGO2" src="Images/SSGLogoFullHighlight1024_512.png" alt="Single Step Games logo" />
-			</div>
-		</div>
-		<div class="clear"></div>
-		<div id="socialText">
-			<p><b>@SingleStepGames</b></p>
-		</div>
-		<div id="socialContainer">
-			<div id="socialContainer2">
-				<a href="https://twitter.com/singlestepgames" target="_blank"><img class="socialLogos" src="Images/UIIconTwitter.png" alt="Twitter logo" /></a>
-				<a href="https://www.instagram.com/singlestepgames/" target="_blank"><img class="socialLogos" src="Images/UIIconInstagram.png" alt="Instagram logo" /></a>
-				<a href="https://www.facebook.com/singlestepgames" target="_blank"><img class="socialLogos" src="Images/UIIconFacebook.png" alt="Facebook logo" /></a>
-			</div>
-		</div>
-		<div class="spacer"></div>
-	</section>
-	<section>
-		<div class="gradEnd"></div>
-	</section>
-	<div id="bottomGradEnd">
-		<section>
-			<br>
-		</section>
-		<footer itemscope itemtype="http://schema.org/Corporation">
-			<div class="spacer"><br></div>
-			<h2>Info</h2>
-			<p><b>PlayStation&trade; Store Page: </b><a href="https://store.playstation.com/en-us/concept/10007380" target="_blank">BREAK STUFF VR</a></p>
-			<p><b>Press: </b><a href="ssg_press_kit.html">Press Kit</a></p>
-			<p><b>Legal Page: </b><a href="ssg_breakstuff_eula.html">EULA and Privacy Policy</a></p>
-			<p><b>E-mail: </b><a href="mailto:Support@SingleStepGames.com" target="_blank" itemprop="email">Support@SingleStepGames.com</a></p>
-			<p><b>Psyche Soldier Page: </b><a href="ssg_page_psyche_soldier.html">Psyche Soldier VR</a></p>
-			<p id="footerText">© 2023 Single Step Games, LLC. SINGLE STEP GAMES, BREAK STUFF VR, and PSYCHE SOLDIER VR are trademarks of Single Step Games, LLC. All rights reserved. All other trademarks and trade names are property of their respective owners.</p>
-			<div class="spacer"><br><br></div>
-		</footer>
+		<div style="height:1.5vh;background:rgba(57,36,93,1);"><span></span></div>
 	</div>
+	<section style="background: linear-gradient(#26183e, #0c0911), #1d132f;opacity: 1;padding-top: 3em;">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<section class="py-4 py-xl-5">
+						<div class="container">
+							<div class="row gx-2 gy-2 row-cols-1 row-cols-md-2 row-cols-xl-3" data-bss-baguettebox="">
+								<div class="col"><a href="assets/img/Carnival_1920_1080.png"><img class="img-fluid border rounded border-0" src="assets/img/Carnival_1920_1080.png"></a></div>
+								<div class="col"><a href="assets/img/BreakStuffOfficeConstruction_1920_1080.png"><img class="img-fluid border rounded border-0" src="assets/img/BreakStuffOfficeConstruction_1920_1080.png"></a></div>
+								<div class="col"><a href="assets/img/BreakStuffBonusShowcase_1920_1080.png"><img class="img-fluid border rounded border-0" src="assets/img/BreakStuffBonusShowcase_1920_1080.png"></a></div>
+								<div class="col"><a href="assets/img/Bonus_Pinatas_1920_1080.png"><img class="img-fluid border rounded border-0" src="assets/img/Bonus_Pinatas_1920_1080.png"></a></div>
+								<div class="col"><a href="assets/img/BreakStuffParkingLotLauncher_1920_1080.png"><img class="img-fluid border rounded border-0" src="assets/img/BreakStuffParkingLotLauncher_1920_1080.png"></a></div>
+								<div class="col"><a href="assets/img/BreakStuffVrWebLoopScreenshot.png"><img class="img-fluid border rounded border-0" src="assets/img/BreakStuffVrWebLoopScreenshot.png"></a></div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+			<div class="row pt-4">
+				<div class="col">
+					<div class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="false" id="carousel-1">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<div class="col-9 text-center mx-auto testimonial-content">
+									<p class="lead text-center text-light"><em>It's very fun to break things without consequences :)</em></p>
+									<p class="fs-3 fw-bold text-info signature">Analeah V.</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="col-9 text-center mx-auto testimonial-content">
+									<p class="lead text-center text-light"><em>Very entertaining! Lots of fun!</em></p>
+									<p class="fs-3 fw-bold text-info signature">Aiden O.</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="col-9 text-center mx-auto testimonial-content">
+									<p class="lead text-center text-light"><em>I loved breaking stuff!</em></p>
+									<p class="fs-3 fw-bold text-info signature">Vera B.</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="col-9 text-center mx-auto testimonial-content">
+									<p class="lead text-center text-light"><em>Very fun. Love to break things :)</em></p>
+									<p class="fs-3 fw-bold text-info signature">Morty F.</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="col-9 text-center mx-auto testimonial-content">
+									<p class="lead text-center text-light"><em>This is the best part of every VR game anyway.</em></p>
+									<p class="fs-3 fw-bold text-info signature">Ken B.</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="col-9 text-center mx-auto testimonial-content">
+									<p class="lead text-center text-light"><em>Very fun game, very smooth and easy to understand.</em></p>
+									<p class="fs-3 fw-bold text-info signature">Eli M.</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="col-9 text-center mx-auto testimonial-content">
+									<p class="lead text-center text-light"><em>Lots of fun, lots of options!</em></p>
+									<p class="fs-3 fw-bold text-info signature">Kayla I.</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="col-9 text-center mx-auto testimonial-content">
+									<p class="lead text-center text-light"><em>Very therapeutic 11/10</em></p>
+									<p class="fs-3 fw-bold text-info signature">Kyle T.</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="col-9 text-center mx-auto testimonial-content">
+									<p class="lead text-center text-light"><em>LOTS OF CATHARTIC FUN!</em></p>
+									<p class="fs-3 fw-bold text-info signature">William W.</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="col-9 text-center mx-auto testimonial-content">
+									<p class="lead text-center text-light"><em>Cathartic!</em></p>
+									<p class="fs-3 fw-bold text-info signature">Mike I.</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="col-9 text-center mx-auto testimonial-content">
+									<p class="lead text-center text-light"><em>GREAT FUN, SUPER SATISFYING TO BREAK STUFF!</em></p>
+									<p class="fs-3 fw-bold text-info signature">Brian W.</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="col-9 text-center mx-auto testimonial-content">
+									<p class="lead text-center text-light"><em>Really fun and intuitive.</em></p>
+									<p class="fs-3 fw-bold text-info signature">Tony H.</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="col-9 text-center mx-auto testimonial-content">
+									<p class="lead text-center text-light"><em>It's really fun and amazing!</em></p>
+									<p class="fs-3 fw-bold text-info signature">Amelia N.</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="col-9 text-center mx-auto testimonial-content">
+									<p class="lead text-center text-light"><em>So funny + stress relieving.</em></p>
+									<p class="fs-3 fw-bold text-info signature">Rachel T.</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="col-9 text-center mx-auto testimonial-content">
+									<p class="lead text-center text-light"><em>Fun!!!!!</em></p>
+									<p class="fs-3 fw-bold text-info signature">Elsie C.</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="col-9 text-center mx-auto testimonial-content">
+									<p class="lead text-center text-light"><em>Fun to destroy!!</em></p>
+									<p class="fs-3 fw-bold text-info signature">Caleb B.</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="col-9 text-center mx-auto testimonial-content">
+									<p class="lead text-center text-light"><em>I really liked it! 10/10 from me.</em></p>
+									<p class="fs-3 fw-bold text-info signature">Aiden E.</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="col-9 text-center mx-auto testimonial-content">
+									<p class="lead text-center text-light"><em>It was great, easy to get into!</em></p>
+									<p class="fs-3 fw-bold text-info signature">Kevin K.</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="col-9 text-center mx-auto testimonial-content">
+									<p class="lead text-center text-light"><em>Awesome gameplay.</em></p>
+									<p class="fs-3 fw-bold text-info signature">Rafi A.</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="col-9 text-center mx-auto testimonial-content">
+									<p class="lead text-center text-light"><em>Best game ever.</em></p>
+									<p class="fs-3 fw-bold text-info signature">Noah J.</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="col-9 text-center mx-auto testimonial-content">
+									<p class="lead text-center text-light"><em>So real and awesome.</em></p>
+									<p class="fs-3 fw-bold text-info signature">Brennan P.</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="col-9 text-center mx-auto testimonial-content">
+									<p class="lead text-center text-light"><em>Best VR game ever.</em></p>
+									<p class="fs-3 fw-bold text-info signature">Hunter I.</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="col-9 text-center mx-auto testimonial-content">
+									<p class="lead text-center text-light"><em>Love the variety!</em></p>
+									<p class="fs-3 fw-bold text-info signature">Alexander C.</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="col-9 text-center mx-auto testimonial-content">
+									<p class="lead text-center text-light"><em>Amazing and immersive! I could have spent hours in the Carnival.</em></p>
+									<p class="fs-3 fw-bold text-info signature">Zach M.</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="col-9 text-center mx-auto testimonial-content">
+									<p class="lead text-center text-light"><em>Very fun. Great for venting frustration :)</em></p>
+									<p class="fs-3 fw-bold text-info signature">Fred O.</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="col-9 text-center mx-auto testimonial-content">
+									<p class="lead text-center text-light"><em>AWESOME GAME IDEA, LOVE IT!</em></p>
+									<p class="fs-3 fw-bold text-info signature">Kelson H.</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="col-9 text-center mx-auto testimonial-content">
+									<p class="lead text-center text-light"><em>It was real fun and engaging :)</em></p>
+									<p class="fs-3 fw-bold text-info signature">Spenser W.</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="col-9 text-center mx-auto testimonial-content">
+									<p class="lead text-center text-light"><em>Lit.</em></p>
+									<p class="fs-3 fw-bold text-info signature">K.J.</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="col-9 text-center mx-auto testimonial-content">
+									<p class="lead text-center text-light"><em>I love breaking the car so thoroughly!</em></p>
+									<p class="fs-3 fw-bold text-info signature">Alicia D.</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="col-9 text-center mx-auto testimonial-content">
+									<p class="lead text-center text-light"><em>Highly entertaining!</em></p>
+									<p class="fs-3 fw-bold text-info signature">Sam T.</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="col-9 text-center mx-auto testimonial-content">
+									<p class="lead text-center text-light"><em>Loved it, good all around fun 10/10</em></p>
+									<p class="fs-3 fw-bold text-info signature">Matthew B.</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="col-9 text-center mx-auto testimonial-content">
+									<p class="lead text-center text-light"><em>Strangely relaxing 9/10</em></p>
+									<p class="fs-3 fw-bold text-info signature">Tre R.</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="col-9 text-center mx-auto testimonial-content">
+									<p class="lead text-center text-light"><em>Love it! Awesome party game.</em></p>
+									<p class="fs-3 fw-bold text-info signature">Trey M.</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="col-9 text-center mx-auto testimonial-content">
+									<p class="lead text-center text-light"><em>I love everything about it!</em></p>
+									<p class="fs-3 fw-bold text-info signature">Zach V.</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="col-9 text-center mx-auto testimonial-content">
+									<p class="lead text-center text-light"><em>A fun catharsis game.</em></p>
+									<p class="fs-3 fw-bold text-info signature">Dean K.</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="col-9 text-center mx-auto testimonial-content">
+									<p class="lead text-center text-light"><em>AWESOME!</em></p>
+									<p class="fs-3 fw-bold text-info signature">John W.</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="col-9 text-center mx-auto testimonial-content">
+									<p class="lead text-center text-light"><em>So awesome!! 10/10 recommend!</em></p>
+									<p class="fs-3 fw-bold text-info signature">Jackie H.</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="col-9 text-center mx-auto testimonial-content">
+									<p class="lead text-center text-light"><em>Amazing game! Great way to release energy! :)</em></p>
+									<p class="fs-3 fw-bold text-info signature">Ava R.</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="col-9 text-center mx-auto testimonial-content">
+									<p class="lead text-center text-light"><em>Very, very fun! Loved breaking stuff and lots to destroy :)</em></p>
+									<p class="fs-3 fw-bold text-info signature">Keleigh L.</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="col-9 text-center mx-auto testimonial-content">
+									<p class="lead text-center text-light"><em>Great game! Lots of fun and easy to play.</em></p>
+									<p class="fs-3 fw-bold text-info signature">Christopher H.</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="col-9 text-center mx-auto testimonial-content">
+									<p class="lead text-center text-light"><em>Great game! What's not to love? Both kids loved it!</em></p>
+									<p class="fs-3 fw-bold text-info signature">Melissa F.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section style="background: linear-gradient(#0c0911 0%, #1d0f34 100%), #0c0911;padding-top: 4em;padding-bottom: 4em;">
+		<div class="container">
+			<div class="row">
+				<div class="col text-center"><img class="pb-5" src="assets/img/SSGLogoFullHighlight1024_512.png" style="width: 216px;">
+					<h1 class="text-uppercase fw-bold text-light" style="font-family: Aldrich, sans-serif;">Follow us on social media</h1>
+					<h6 class="text-uppercase text-light" style="font-family: Aldrich, sans-serif;">@SingleStepGames<br><br><br></h6>
+					<div class="social-icons">
+						<a href="https://twitter.com/singlestepgames" target="_blank"><img src="assets/img/UIIconTwitter.png"></a>
+						<a href="https://www.instagram.com/singlestepgames" target="_blank"><img src="assets/img/UIIconInstagram.png"></a>
+						<a href="https://www.facebook.com/singlestepgames" target="_blank"><img src="assets/img/UIIconFacebook.png"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section style="padding-top: 3em;padding-bottom: 5em;background: url(&quot;assets/img/bg2.png&quot;) bottom / cover, #181a2f;">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+				<h1 class="text-uppercase fw-bold text-center text-light pb-4" style="font-family: Aldrich, sans-serif;">Info</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-sm-6 col-lg-4 col-xl-3 col-xxl-3 text-center d-xl-flex flex-column flex-sm-column flex-md-column flex-lg-column flex-xl-column justify-content-xl-center align-items-xl-center flex-xxl-column pt-2">
+					<a class="link-box" href="https://store.playstation.com/en-us/concept/10007380">
+						<h5 class="text-light">PlayStation™ Store</h5>
+						<p>BREAK STUFF VR</p>
+					</a>
+				</div>
+				<div class="col-12 col-sm-6 col-lg-4 col-xl-3 text-center d-xl-flex flex-column flex-sm-column flex-md-column flex-lg-column flex-xl-column justify-content-xl-center align-items-xl-center flex-xxl-column pt-2">
+					<a class="link-box" href="Press-kit.html">
+						<h5 class="text-light">Press</h5>
+						<p>Press Kit</p>
+					</a>
+				</div>
+				<div class="col-12 col-sm-6 col-lg-4 col-xl-3 text-center d-xl-flex flex-column flex-sm-column flex-md-column flex-lg-column flex-xl-column justify-content-xl-center align-items-xl-center flex-xxl-column pt-2">
+					<a class="link-box" href="legal.html">
+						<h5 class="text-light">Legal Page</h5>
+						<p>EULA and Privacy Policy</p>
+					</a>
+				</div>
+				<div class="col-12 col-sm-6 col-lg-4 col-xl-3 offset-lg-2 offset-xl-0 text-center d-xl-flex flex-column flex-sm-column flex-md-column flex-lg-column flex-xl-column justify-content-xl-center align-items-xl-center flex-xxl-column pt-2">
+					<a class="link-box" href="PsycheSoldier.html">
+						<h5 class="text-light">Psyche Soldier</h5>
+						<p>Psyche Soldier VR</p>
+					</a>
+				</div>
+				<div class="col-12 col-lg-4 col-xl-4 offset-xl-4 text-center d-xl-flex flex-column flex-sm-column flex-md-column flex-lg-column flex-xl-column justify-content-xl-center align-items-xl-center flex-xxl-column pt-2">
+					<a class="link-box" href="mailto:Support@SingleStepGames.com">
+						<h5 class="text-light">E-mail</h5>
+						<p>Support@SingleStepGames.com</p>
+					</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xl-8 offset-xl-2 pt-5">
+					<p id="footerText" class="text-center text-light">© 2023 Single Step Games, LLC. SINGLE STEP GAMES, BREAK STUFF VR, and PSYCHE SOLDIER VR are trademarks of Single Step Games, LLC. All rights reserved. All other trademarks and trade names are property of their respective owners.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/js/bs-init.js"></script>
+	<script src="assets/js/Lightbox-Gallery-baguetteBox.min.js"></script>
+	<script src="assets/js/Lightbox-Gallery.js"></script>
+	<script src="assets/js/Simple-Slider-swiper-bundle.min.js"></script>
+	<script src="assets/js/Simple-Slider.js"></script>
+	<script src="assets/js/ssg_scripts_shared.js"></script>
+	<script src="assets/js/Video-Parallax-Background-v3-Parallax-Video-Background.js"></script>
 </body>
+
 </html>
