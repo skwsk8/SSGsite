@@ -200,7 +200,6 @@
 
 .card-design {
   transition: all 0.2s ease-in;
-  cursor: pointer;
 }
 
 .card-design:hover {
