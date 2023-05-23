@@ -17,7 +17,7 @@
 }
 
 .logoanim {
-  animation: myAnim 2s ease-in-out 2s infinite normal none;
+  animation: myAnim 3.5s ease-in-out 1s infinite normal none;
 }
 
 @keyframes myAnim {
