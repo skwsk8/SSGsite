@@ -1,7 +1,12 @@
 .avaialblesoon {
   background: linear-gradient(300deg,var(--bs-yellow),var(--bs-orange),var(--bs-red),var(--bs-yellow));
   background-size: 180% 180%;
-  animation: gradient-animation 2s ease infinite;
+  animation: gradient-animation 4s ease infinite;
+}
+
+.avaialblesoon:hover {
+	-webkit-filter: drop-shadow(0px 0px 10px #FF8300);
+	filter: drop-shadow(0px 0px 10px #FF8300);
 }
 
 @keyframes gradient-animation {
