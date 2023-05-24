@@ -29,9 +29,6 @@ $(window).on('resize', function(){
 });
 
 function centerBgVideo() {
-	//if(jQuery.browser.mobile) {
-	//	return;
-	//}
     $('.video-parallax-container').each(function(){
         var container_height = $(this).height();
         var video_height = $(this).children('video').height();

@@ -23,7 +23,7 @@
 
 @media (max-width: 767px) {
   .video-parallax-container {
-    height: 80vh;
+    height: 100vh;
     overflow: hidden;
   }
 }
