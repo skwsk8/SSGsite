@@ -1,12 +1,15 @@
 .avaialblesoon {
-  background: linear-gradient(300deg,var(--bs-yellow),var(--bs-orange),var(--bs-red),var(--bs-yellow));
-  background-size: 180% 180%;
-  animation: gradient-animation 4s ease infinite;
+	background: linear-gradient(300deg,rgba(255,193,7,0.5),rgba(253,126,20,0.5),rgba(220,53,69,0.5),rgba(255,193,7,0.5));
+	background-size: 180% 180%;
+	animation: gradient-animation 4s ease infinite;
+	color:white !important;
+	outline:3px solid rgba(255, 131, 0,0.75) !important;
+	font-size: calc(1.3rem);
 }
 
 .avaialblesoon:hover {
-	-webkit-filter: drop-shadow(0px 0px 10px #FF8300);
-	filter: drop-shadow(0px 0px 10px #FF8300);
+	background-color: rgba(255, 131, 0, 0.75) !important;
+	outline:3px solid rgba(255, 193, 7,0.825) !important;
 }
 
 @keyframes gradient-animation {
@@ -22,7 +25,7 @@
 }
 
 .logoanim {
-  animation: myAnim 3.5s ease-in-out 1s infinite normal none;
+  animation: myAnim 4s ease-in-out 1s infinite normal none;
 }
 
 @keyframes myAnim {
@@ -59,6 +62,10 @@
   100% {
     transform: translate(0);
   }
+}
+
+.signature {
+	font-family:Aldrich,sans-serif;
 }
 
 .social-icons img {
